@@ -1,11 +1,11 @@
 import cv2
-from matplotlib import pyplot as plt
+
 
 #Import pretrained dataset
 trained_face_data = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 
 #Import the Image to Detect face(s) in
-img = cv2.imread('IMG_0452.jpg')
+img = cv2.imread('facefront.jpeg')
 
 #covert to gray scale
 grayscaled_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
